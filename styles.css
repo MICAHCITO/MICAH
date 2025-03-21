@@ -195,38 +195,77 @@ a:hover {
 
 @media (max-width: 768px) {
   .intro {
-    width: 60%;
+    width: 90%;
   }
 
-  .skill-row,
+  .skill-row {
+    width: 95%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
   .contact-message {
-    width: 80%;
+    width: 90%;
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: clamp(2rem, 8vw, 4.5rem);
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
   }
 
   .html-logo,
   .orange-logo {
-    width: 40%;
+    width: 60%;
+    max-width: 200px;
     float: none;
-    margin: 0 auto 30px auto;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .down-edit {
+    margin-top: 2rem;
+    text-align: center;
   }
 
   .top-cloud,
   .buttom-cloud {
-    width: 80px;
-    right: 10px;
-    left: 10px;
+    width: 60px;
+  }
+
+  .top-cloud {
+    right: 5%;
+    top: 10%;
+  }
+
+  .buttom-cloud {
+    left: 5%;
+    bottom: 40%;
   }
 
   .micah-image {
-    width: 150px;
+    width: 120px;
+    margin: 1rem auto;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 80%;
+    max-width: 250px;
+    padding: 12px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .buttom-container {
+    padding: 30px 15px;
+  }
+
+  a {
+    margin: 10px;
+    display: inline-block;
   }
 }
 
@@ -246,5 +285,45 @@ a:hover {
 
   h2 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .intro {
+    width: 95%;
+  }
+
+  .html-logo,
+  .orange-logo {
+    width: 80%;
+  }
+
+  .skill-row {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .mountain {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .buttom-container {
+    padding: 20px 10px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 15px 0;
   }
 }
